@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './agregar-editar-mascota.component.css'
 })
 export class AgregarEditarMascotaComponent {
+  loading:boolean=false;
+
+  constructor(){
+    
+  }
 
 }
