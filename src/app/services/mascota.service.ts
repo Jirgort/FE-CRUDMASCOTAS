@@ -18,7 +18,11 @@ export class MascotaService {
   }
 
   getMascota(id: Number): Observable<Mascota>{
-    return this.http.get<Mascota>(`${this.myAppUrl}${this.myApiUrl}${id}`)
+    return this.http.get<Mascota>(`${this.myAppUrl}${this.myApiUrl}${id}`);
+  }
+
+  deleteMascota(id:Number):Observable<void>{
+    return this.http.delete<void>(`${this.myAppUrl}${this.myApiUrl}${id}`);
   }
 
 }
